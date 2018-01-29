@@ -3,10 +3,10 @@
 ## 日常使用
   * [!!使用协议与须知!!](<使用协议与须知.md>)
   * [什么是身份？](<什么是身份.md>)
-  * [扫码登录时怎样保护你身份数据的？](<why_qrcode_auth_safe.md.md>)
+  * [扫码登录时怎样保护你身份数据的？](<why_qrcode_auth_safe.md>)
 
 
 ## 技术
 
-  * [一键搭建服务器教程（Docker）](<docker服务器搭建.md>)
+  * [一键搭建服务器教程（Docker）](<install_server_with_docker.md>)
   * [服务器源码安装教程](<源码安装.md>)
