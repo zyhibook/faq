@@ -6,7 +6,7 @@
 
 2. 运行镜像
 	
-		docker run -tid -v hostBaseDir:/akaxin -p hostPort:2021 registry.cn-qingdao.aliyuncs.com/akaxin/openzaly:latest
+		docker run -tid -v hostBaseDir:/akaxin -p 2021:2021 registry.cn-qingdao.aliyuncs.com/akaxin/openzaly:latest
 		
 	例如：
 	
