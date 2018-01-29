@@ -2,12 +2,16 @@
 
 1. 拉取镜像
 
-		docker pull registry.cn-hangzhou.aliyuncs.com/shaoye/zaly_site_test:v1
+		docker pull registry.cn-qingdao.aliyuncs.com/akaxin/openzaly:latest
 
 2. 运行镜像
 	
-		docker run -ti hostBaseDir:/akaxin -p hostPort:2021 registry.cn-hangzhou.aliyuncs.com/shaoye/zaly_site_test:v1
+		docker run -tid -v hostBaseDir:/akaxin -p hostPort:2021 registry.cn-qingdao.aliyuncs.com/akaxin/openzaly:latest
+		
+	例如：
 	
+		docker run -tid -v /akaxin:/akaxin -p 2021:2021 registry.cn-qingdao.aliyuncs.com/akaxin/openzaly:latest
+
 	* hostBaseDir 您本机数据存储的位置，如log, db 等
 	* hostPort 您本机共网可以访问的ip:port
 
