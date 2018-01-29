@@ -13,7 +13,6 @@
 		docker run -tid -v /akaxin:/akaxin -p 2021:2021 registry.cn-qingdao.aliyuncs.com/akaxin/openzaly:latest
 
 	* hostBaseDir 您本机数据存储的位置，如log, db 等
-	* hostPort 您本机共网可以访问的ip:port
 
 3. 查看镜像
 	
