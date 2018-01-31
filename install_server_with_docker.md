@@ -1,5 +1,14 @@
 # 阿卡信服务器快速搭建教程
 
+快速安装基于Docker，以下是Docker的一键安装教程，**如果你已经拥有Docker环境，请跳过**。
+
+* [Docker - Linux](<demo.md>)
+* [Docker - Mac OSX](<demo.md>)
+* [Docker - Windows Pro\Server](<demo.md>)
+
+
+## 两行命令拥有阿卡信服务器
+
 通过我们发布的Docker镜像，可以最快速的完成服务器搭建工作，整个过程只需两行命令。
 
 ````shell
