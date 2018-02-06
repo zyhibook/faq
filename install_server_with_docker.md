@@ -29,8 +29,11 @@ docker ps -l
 快速安装基于Docker，以下是Docker的一键安装教程，**如果你已经拥有Docker环境，请跳过**。
 
 * [Linux](<demo.md>)
-* [Mac OSX](<demo.md>)
-* [Windows Pro\Server](<demo.md>)
+  * 直接通过yum、apt安装即可。
+  * 或者访问：https://www.docker.com/community-edition#/download
+* [Mac OSX](<https://store.docker.com/editions/community/docker-ce-desktop-mac>)
+* [Windows Pro\Server](<https://store.docker.com/editions/community/docker-ce-desktop-windows>)
+
 
 ----
 
