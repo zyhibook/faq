@@ -23,6 +23,8 @@ docker ps -l
 
 看到镜像，处于运行中，代表镜像运行成功，可以通过app访问站点。
 
+## app访问站点
+* [How to login site](./how_to_login_site.md)
 
 ## 一键安装Docker教程
 
