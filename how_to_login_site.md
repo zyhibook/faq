@@ -1,4 +1,5 @@
-#app访问站点
+##app访问站点
+
 > 如果你还没有阿卡信app, 请前往官网下载[akaxin](https://www.akaxin.com/)
 
 ****
@@ -9,8 +10,7 @@
 	* 生成全新身份，会丢弃你以前身份的所有的相关信息，重新生成密钥对
 	* 其它设备扫一扫授权，用于多设备之间同步自己的身份信息
 	* 手机号同步登录，即使用手机号实名登录站点
-	* 
-![app 首页面](./app_pic/start.png)
+	* ![app 首页面](./app_pic/start.png)
 
 **第一次登录app，我们选择【生成全新身份】，会看到如下图的界面**
 
@@ -18,10 +18,8 @@
 	* 【消息帧】即首页，站点地址输入栏以及聊天信息等
 	* 【通讯录】你的好友，群组以及好友申请的通知等
 	* 【个人】关于你的个人信息，包括身份二维码，站点管理，绑定手机号等
-	* 
-![app 首页面](./app_pic/first.png)
-![app login页面](./app_pic/second.png)
-![app login页面](./app_pic/third.png)
+	* ![app 首页面](./app_pic/first.png)![app login页面](./app_pic/second.png)
+	* ![app login页面](./app_pic/third.png)
 
 ****
 
@@ -36,8 +34,7 @@
 ****
 
 ###app成功登陆站点
-* ![app login页面](./app_pic/login_first.png)
-![app login页面](./app_pic/login_second.png)
+* ![app login页面](./app_pic/login_first.png) ![app login页面](./app_pic/login_second.png)
 * ![app login页面](./app_pic/login_third.png)
 
 现在，你已经成功的搭建了自己的站点，并且登录了自己的站点。那么接下来，就赶紧将站点地址告诉自己的小伙伴吧，扫描小伙伴的身份二维码添加好友，来打造一个自己的即时通讯平台。
