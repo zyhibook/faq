@@ -24,7 +24,8 @@ docker ps -l
 看到处于运行中的服务，代表程序运行成功，可以通过app访问站点。
 
 ## app访问站点
-* [How to login site](./how_to_login_site.md)
+
+打开应用输入服务器地址，便可访问站点。初次访问的邀请码为000000，初次登录的用户默认为站点管理员。更详细的使用方法请参考：[APP使用简介](./how_to_login_site.md)
 
 ## 一键安装Docker教程
 
