@@ -21,7 +21,7 @@ docker run -tid -v hostBaseDir:/akaxin -p 2021:2021 registry.cn-qingdao.aliyuncs
 docker ps -l
 ````
 
-看到镜像，处于运行中，代表镜像运行成功，可以通过app访问站点。
+看到处于运行中的服务，代表程序运行成功，可以通过app访问站点。
 
 ## app访问站点
 * [How to login site](./how_to_login_site.md)
