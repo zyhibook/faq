@@ -1,7 +1,10 @@
-### Zaly_admin_nginx配置文件
-  * 修改Zaly_admin的存放目录，默认/home
-  * 修改Zaly_admin log的存放目录，默认/akaxin
-  * 修改您本机的php-fpm监听端口，默认9000
+# Zaly_admin_nginx配置文件
+
+> 这只是一个范例而已，并不是copy过去直接用。
+
+* 修改Zaly_admin的存放目录，默认/home
+* 修改Zaly_admin log的存放目录，默认/akaxin
+* 修改您本机的php-fpm监听端口，默认9000
     
 ```
 server {
