@@ -1,0 +1,24 @@
+site_name: 阿卡信使用指南
+site_url: 'https://www.akaxin.com/docs/'
+repo_url: https://github.com/akaxincom
+site_description: "阿卡信使用手册 帮助文档"
+copyright: www.akaxin.com
+use_directory_urls: false
+pages:
+    - 首页: index.md
+    - 服务器部署: server.md
+    - 扩展开发: plugin.md
+#    - 用户指南: user.md
+    - 常见问题: faq.md
+    - 名词解释:
+        - 用户身份与设备身份: spec/userid.md
+        - 用户使用协议: spec/user_agreement.md
+        - 扫码授权登录原理: spec/init_userid_by_qrcode.md
+        - 管理平台配置说明: spec/server_config.md
+theme:
+  name: 'material'
+  custom_dir: theme/
+  logo: assets/images/favicon.png
+markdown_extensions:
+  - admonition
+  - footnotes
