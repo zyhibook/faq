@@ -10,6 +10,7 @@ pages:
     - 扩展开发: plugin.md
 #    - 用户指南: user.md
     - 常见问题: faq.md
+    - 招聘求贤: hire_document.md
     - 名词解释:
         - 用户身份与设备身份: spec/userid.md
         - 用户使用协议: spec/user_agreement.md
