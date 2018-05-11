@@ -8,6 +8,8 @@ pages:
     - 首页: index.md
     - 服务器部署: server.md
     - 扩展开发: plugin.md
+    - 扩展提供的接口:
+        - 获取站点设置: plugin/plugin_site.md
 #    - 用户指南: user.md
     - 常见问题: faq.md
     - 招聘求贤: hire_document.md
