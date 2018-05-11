@@ -8,32 +8,49 @@
 **重要 jar包，docker镜像两者任选其一。**
 
 * [基于jar包部署服务器](#jar)
+* [访问站点服务器](#loginSite)
 * [基于Docker部署服务器](#docker)
 
 ## **部署服务器**
 
 ### <h3 id="jar">**基于jar包部署服务器**<h3>
 
-* 项目地址: https://github.com/akaxincom/openzaly
-* 最新版本: openzaly-0.5.4.jar
-	* Github下载: https://github.com/akaxincom/openzaly/releases/download/v0.5.4/openzaly-server.jar
-	* Gitee下载: 下载链接
+* 项目地址: 
+* 最新版本:
+	* [Github下载](<https://github.com/akaxincom/openzaly/releases>)
+	* Gitee下载: 完善中
 
-* 启动命令：java -jar openzaly-server.jar
+* 启动命令：
 
-* 支持的启动参数：java -jar openzaly-server.jar -h
+```
+java -jar openzaly-server.jar
+```
+* 支持的启动参数：
+```
+java -jar openzaly-server.jar -h
+```
 
-## **访问站点**
+	-Dsite.project.env 	openzaly server environment default:ONLINE
+	-Dsite.version 		openzaly server version default:0.3.2
+	-Dsite.address 		openzaly Netty address default:0.0.0.0
+	-Dsite.port 		openzaly Netty port default:2021
+	-Dhttp.address 		openzaly Http address default:0.0.0.0
+	-Dhttp.port 		openzaly Http port default:8080
+	-Dsite.admin.address 	openzaly AdminSystem address default:127.0.0.1
+	-Dsite.admin.port 	openzaly AdminSystem port default:8081
+	-Dsite.admin.uic 	openzaly first uic for admin port default:000000
+	-Dsite.baseDir 		openzaly openzaly-server root dir default:./
+	-Dgroup.members.count 	openzaly Max group member size default:100
+
+### <h3 id="loginSite">**访问站点服务器**</h3> 
 
 > * 生成自己的账户
 > * 输入站点服务器地址
 > * 首次登陆为管理员，邀请码：000000。 管理员登录之后，请在管理后台管理站点的基本信息
 > * 将站点服务器地址分享给好友，app中添加为好友之后，就可以开始聊天了。
 
-------
 
-
-## 一键安装Docker教程
+### <h3 id="installDocker">**一键安装Docker教程**</h3> 
 
 快速安装基于Docker，以下是Docker的一键安装教程，**如果你已经拥有Docker环境，请跳过**。
 
@@ -47,7 +64,8 @@
 
 通过我们发布的Docker镜像，可以快速完成服务器搭建工作，整个过程只需两行命令。
 
-> 如果你没有Docker环境，请看下面的Docker一键安装教程。
+> 如果你没有Docker环境，[一键安装Docker教程](#installDocker)
+
 
 **1.请认准我们的官方docker镜像，无毒无害实时更新**
 
