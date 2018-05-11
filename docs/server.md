@@ -3,12 +3,16 @@
 
 > [管理平台配置说明](spec/server_config.md)
 
-我们提供了两种方式搭建自己的服务器，基于基于jar包或者Docker部署服务器。**重要 jar包，docker镜像两者任选其一 **
+我们提供了两种方式搭建自己的服务器，基于基于jar包或者Docker部署服务器。
 
+**重要 jar包，docker镜像两者任选其一。**
+
+* [基于jar包部署服务器](#jar)
+* [基于Docker部署服务器](#docker)
 
 ## **部署服务器**
 
-### **基于jar包部署服务器**
+### <h3 id="jar">**基于jar包部署服务器**<h3>
 
 * 项目地址: https://github.com/akaxincom/openzaly
 * 最新版本: openzaly-0.5.4.jar
@@ -19,8 +23,27 @@
 
 * 支持的启动参数：java -jar openzaly-server.jar -h
 
+## **访问站点**
 
-### **或者 基于Docker部署服务器** 
+> * 生成自己的账户
+> * 输入站点服务器地址
+> * 首次登陆为管理员，邀请码：000000。 管理员登录之后，请在管理后台管理站点的基本信息
+> * 将站点服务器地址分享给好友，app中添加为好友之后，就可以开始聊天了。
+
+------
+
+
+## 一键安装Docker教程
+
+快速安装基于Docker，以下是Docker的一键安装教程，**如果你已经拥有Docker环境，请跳过**。
+
+* Linux
+    * 直接通过yum、apt安装即可。
+    * 或者访问：https://www.docker.com/community-edition#/download
+* [Mac OSX](<https://store.docker.com/editions/community/docker-ce-desktop-mac>)
+* [Windows Pro\Server](<https://store.docker.com/editions/community/docker-ce-desktop-windows>)
+
+### <h3 id="jar">**基于Docker部署服务器**</h3> 
 
 通过我们发布的Docker镜像，可以快速完成服务器搭建工作，整个过程只需两行命令。
 
@@ -53,27 +76,5 @@ docker run -tid -v baseAkaxin:/akaxin -p 2021:2021 registry.cn-qingdao.aliyuncs.
  docker ps
 ```
 
-## **访问站点**
-
-> * 生成自己的账户
-> * 输入站点服务器地址
-> * 首次登陆为管理员，邀请码：000000。 管理员登录之后，请在管理后台管理站点的基本信息
-> * 将站点服务器地址分享给好友，app中添加为好友之后，就可以开始聊天了。
-
---------
-
-
-## 一键安装Docker教程
-
-快速安装基于Docker，以下是Docker的一键安装教程，**如果你已经拥有Docker环境，请跳过**。
-
-* Linux
-    * 直接通过yum、apt安装即可。
-    * 或者访问：https://www.docker.com/community-edition#/download
-* [Mac OSX](<https://store.docker.com/editions/community/docker-ce-desktop-mac>)
-* [Windows Pro\Server](<https://store.docker.com/editions/community/docker-ce-desktop-windows>)
-
-
-----
 
 使用过程若有任何问题，欢迎联系我们 feedback@akaxin.xyz
