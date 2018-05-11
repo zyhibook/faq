@@ -29,19 +29,19 @@ java -jar openzaly-server.jar
 ```
 java -jar openzaly-server.jar -h
 ```
-
-	-Dsite.project.env 	openzaly server environment default:ONLINE
-	-Dsite.version 		openzaly server version default:0.3.2
-	-Dsite.address 		openzaly Netty address default:0.0.0.0
-	-Dsite.port 		openzaly Netty port default:2021
-	-Dhttp.address 		openzaly Http address default:0.0.0.0
-	-Dhttp.port 		openzaly Http port default:8080
-	-Dsite.admin.address 	openzaly AdminSystem address default:127.0.0.1
-	-Dsite.admin.port 	openzaly AdminSystem port default:8081
-	-Dsite.admin.uic 	openzaly first uic for admin port default:000000
-	-Dsite.baseDir 		openzaly openzaly-server root dir default:./
-	-Dgroup.members.count 	openzaly Max group member size default:100
-
+```
+  -Dsite.project.env    openzaly server environment default:ONLINE
+  -Dsite.version        openzaly server version default:0.3.2
+  -Dsite.address        openzaly Netty address default:0.0.0.0
+  -Dsite.port           openzaly Netty port default:2021
+  -Dhttp.address        openzaly Http address default:0.0.0.0
+  -Dhttp.port           openzaly Http port default:8080
+  -Dsite.admin.address  openzaly AdminSystem address default:127.0.0.1
+  -Dsite.admin.port     openzaly AdminSystem port default:8081
+  -Dsite.admin.uic      openzaly first uic for admin port default:000000
+  -Dsite.baseDir        openzaly openzaly-server root dir default:./
+  -Dgroup.members.count openzaly Max group member size default:100
+```
 ### <h3 id="loginSite">**访问站点服务器**</h3> 
 
 > * 生成自己的账户
