@@ -31,6 +31,7 @@ Akaxin 是一款开源免费的聊天软件、代码，可以帮助大家快速�
 
 快速体验
 =====
+
 我们提供了两种方式搭建自己的服务器，<b>基于基于jar包或者Docker部署服务器。</b>
 
 * [基于jar包部署服务器](#jarPackage)
@@ -72,13 +73,13 @@ java -jar openzaly-server.jar -h
 ```
 
 ### <h3 id="appDownload">**下载客户端**</h3>
-=====
+
 
 > * [iOS](https://itunes.apple.com/cn/app/%E9%98%BF%E5%8D%A1%E4%BF%A1/id1346971087?mt=8)
 > * [Android](https://www.akaxin.com)
 
 ### <h3 id="loginSite">**访问站点**</h3>
-=====
+
 
 > * 生成自己的账户
 > * 输入站点服务器地址
