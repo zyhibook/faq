@@ -2,31 +2,60 @@
 
 > [管理平台配置说明](spec/server_config.md)
 
-## 推荐！基于Docker
+我们提供了两种方式搭建自己的服务器，基于基于jar包或者Docker部署服务器。**jar包，docker镜像两者任选其一**
+
+## 基于jar包部署服务器
+
+* 项目地址: https://github.com/akaxincom/openzaly
+* 最新版本: openzaly-0.5.4.jar
+	* Github下载: https://github.com/akaxincom/openzaly/releases/download/v0.5.4/openzaly-server.jar
+	* Gitee下载: 下载链接
+
+* 启动命令：java -jar openzaly-server.jar
+
+* 支持的启动参数：java -jar openzaly-server.jar -h
+
+
+## 基于Docker部署服务器
 
 通过我们发布的Docker镜像，可以快速完成服务器搭建工作，整个过程只需两行命令。
 
 > 如果你没有Docker环境，请看下面的Docker一键安装教程。
 
-````shell
-# 请认准我们的官方镜像，无毒无害实时更新
+**1.请认准我们的官方docker镜像，无毒无害实时更新**
+
+```
 docker pull registry.cn-qingdao.aliyuncs.com/akaxin/openzaly:latest
+```
 
-# hostBaseDir需要更改成你本地的绝对目录，服务器的日志、图片、数据库将存储在这个位置
-docker run -tid -v hostBaseDir:/akaxin -p 2021:2021 registry.cn-qingdao.aliyuncs.com/akaxin/openzaly:latest
-````
+**2.服务器运行docker**
+> baseAkaxin需要更改成你本地的目录，服务器的日志、图片、数据库将存储在这个位置。
+> 
+> 2021为默认的端口号，如果有需要改，请修改第一个2021，第二个2021修改后，可能导致服务器地址无法正常访问
+> 
+> <b>官方建议更改baseAkaxin的目录位置，如果没有修改，可能导致docker重启之后，会出现数据丢失的现象</b>
+> 
 
-通过上面的两行命令安装完成后
+```
+docker run -tid -v baseAkaxin:/akaxin -p 2021:2021 registry.cn-qingdao.aliyuncs.com/akaxin/openzaly:latest
+```
 
-````shell
-docker ps -l
-````
+**3.运行以下命令，看到处于运行中的服务，代表程序运行成功，可以通过app访问站点服务器。**
 
-看到处于运行中的服务，代表程序运行成功，可以通过app访问站点。
+```
+ docker ps 
+```
 
-## 访问站点
+**访问站点**
+=====
 
-打开应用输入服务器地址，便可访问站点。初次访问的邀请码为`000000`，初次登录的用户默认为站点管理员。
+> * 生成自己的账户
+> * 输入站点服务器地址
+> * 首次登陆为管理员，邀请码：000000。 <b>管理员登录之后，请在管理后台管理站点的基本信息</b>
+> * 将站点服务器地址分享给好友，app中添加为好友之后，就可以开始聊天了。
+
+--------
+
 
 ## 一键安装Docker教程
 
@@ -38,98 +67,6 @@ docker ps -l
 * [Mac OSX](<https://store.docker.com/editions/community/docker-ce-desktop-mac>)
 * [Windows Pro\Server](<https://store.docker.com/editions/community/docker-ce-desktop-windows>)
 
-
-----
-
-## 通过源码安装阿卡信服务端
-
-### 1. 安装通讯服务器
-
-* gitHub地址：https://github.com/akaxincom/openzaly
-	* 执行build.sh生成jar包。
-
-* 运行jar包
-	* java -Dsite.port=$PORT -Dhttp.port=$PORT2 -jar openzaly-boot-jar-with-dependencies.jar
-	* $PORT 是对用户提供的端口，默认为2021，建议不要修改。
-	* $PORT2 是对Server端API提供的端口。
-
-**-jar参数选项：**
-```
-### site netty tcp address,listen all address
-site.address=0.0.0.0
-
-### site netty tcp port
-site.port=2021
-
-### http server address
-http.address=127.0.0.1
-
-### http port
-http.port=8080
-
-### default back-stage management address
-site.admin.address=127.0.0.1
-
-### default back-stage management port
-site.admin.port=80
-
-### default site Administrators
-site.administrators=ZALY_SHAOYE
-
-### first user login site,use this invite code
-site.admin.uic=000000
-
-### deposit pictures,audio,db
-site.baseDir=./
-```
-
-### 2. 管理管理后台
-
-* github地址：https://github.com/akaxincom/site-admin
-	* 安装到通讯服务器同一机器上。
-	* 参考 nginx配置文件：[源码安装-nginx配置](./源码安装-nginx配置.md
-
-
-**Zaly_admin_nginx配置文件**
-
-```
-
-# 这只是一个范例而已，并不是copy过去直接用。
-
-# 修改Zaly_admin的存放目录，默认/home
-# 修改Zaly_admin log的存放目录，默认/akaxin
-# 修改您本机的php-fpm监听端口，默认9000
-
-server {
-    listen       80;
-    server_name 127.0.0.1;
-
-    charset utf-8;
-
-    access_log /akaxin/plugin_access.log ;
-    error_log /akaxin/plugin_error.log ;
-
-    root   /home/zaly_admin;
-    index  index.html index.htm index.php;
-    location / {
-        try_files $uri $uri/ /index.php?$query_string;
-    }
-
-    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-    #
-    location ~ \.php$ {
-        fastcgi_pass   127.0.0.1:9000;
-        fastcgi_index  index.php;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-
-        include        fastcgi_params;
-    }
-}
-```
-
-### 3. 成功搭建站点后，app登陆站点
-
-打开应用输入服务器地址，便可访问站点。初次访问的邀请码为`000000`，初次登录的用户默认为站点管理员。
 
 ----
 
