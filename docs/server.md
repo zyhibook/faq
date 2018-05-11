@@ -43,7 +43,7 @@
 * [Mac OSX](<https://store.docker.com/editions/community/docker-ce-desktop-mac>)
 * [Windows Pro\Server](<https://store.docker.com/editions/community/docker-ce-desktop-windows>)
 
-### <h3 id="jar">**基于Docker部署服务器**</h3> 
+### <h3 id="docker">**基于Docker部署服务器**</h3> 
 
 通过我们发布的Docker镜像，可以快速完成服务器搭建工作，整个过程只需两行命令。
 
