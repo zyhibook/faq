@@ -78,4 +78,4 @@ $ java -jar  -Dsite.port=12345 openzaly-server.jar
 
 1. 打开终端
 2. 通过 cd 命令切换到jar包所在目录
-3. 输入服务器启动领命
+3. 输入服务器启动命令

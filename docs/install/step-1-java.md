@@ -25,7 +25,7 @@
 ====
 
 1. 打开Java 官方下载地址
-    * http://www.oracle.com/technetwork/java/javase/downloads/jre10-downloads-4417026.html
+    * [http://www.oracle.com/technetwork/java/javase/downloads/jre10-downloads-4417026.html](http://www.oracle.com/technetwork/java/javase/downloads/jre10-downloads-4417026.html)
 2. 下载 jre-10.0.1_windows-x64_bin.exe
     * 需要先选中【 Accept License Agreement】
 3. 下载完成后，双击运行即可。
