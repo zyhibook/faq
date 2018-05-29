@@ -26,3 +26,13 @@ Akaxin 是一款开源免费的聊天软件、代码，可以帮助大家快速�
 * 等
 
 > 在线访问：<b>https://www.akaxin.com/docs/</b>
+
+
+- 扩展名称
+- url_page -> 落地页
+    * placeholder -> 完整URL，或者RESP扩展的页面名称
+- api_url -> 扩展Server地址
+    * placeholder -> 请参考文档。
+- logo上传： Logo
+
+- 扩展序号
