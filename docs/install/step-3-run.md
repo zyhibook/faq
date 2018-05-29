@@ -23,8 +23,7 @@
 > 在哪一个文件夹下执行 `java -jar` 程序，哪一个文件夹，就是Akaxin服务端程序的 `当前工作目录`
 
 
-服务器的启动命令
-====
+## 服务器的启动命令
 
 **默认参数启动**
 
@@ -57,15 +56,13 @@ $ java -jar  -Dsite.port=12345 openzaly-server.jar
 ```
 
 
-在服务器上启动程序
-====
+## 在服务器上启动程序
 
 * 在Windows上启动服务器
 * 在Mac、Linux上启动服务器
 
 
-在Windows上启动服务器
-----
+### 在Windows上启动服务器
 
 1. 打开cmd命令行工具
 2. 通过 cd 命令切换到 jar包 所在的目录
@@ -73,8 +70,8 @@ $ java -jar  -Dsite.port=12345 openzaly-server.jar
 4. 输入服务器启动命令
 
 
-在Mac、Linux上启动服务器
-----
+### 在Mac、Linux上启动服务器
+
 
 1. 打开终端
 2. 通过 cd 命令切换到jar包所在目录

@@ -11,15 +11,13 @@
 
 # 第二步：获取Akaxin服务端程序
 
-方法一：下载现成的Jar包
-====
+## 方法一：下载现成的Jar包
 
 在 [https://github.com/akaxincom/openzaly/blob/master/README.md](https://github.com/akaxincom/openzaly/blob/master/README.md) 寻找最新版本的下载链接。
 
 
 
-方法二：自己编译（这种方法不推荐给非技术用户使用）
-====
+## 方法二：自己编译（这种方法不推荐给非技术用户使用）
 
 对普通用户来说，这有点折腾；对Java工程师，应该是很轻松的一件事情了。
 

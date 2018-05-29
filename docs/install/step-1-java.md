@@ -21,28 +21,27 @@
 * 在Linux上安装Java
 
 
-在Windows上安装Java
-====
+## 在Windows上安装Java
 
 1. 打开Java 官方下载地址
     * [http://www.oracle.com/technetwork/java/javase/downloads/jre10-downloads-4417026.html](http://www.oracle.com/technetwork/java/javase/downloads/jre10-downloads-4417026.html)
+    * 上面如果打不开，可以使用 www.java.com
 2. 下载 jre-10.0.1_windows-x64_bin.exe
     * 需要先选中【 Accept License Agreement】
 3. 下载完成后，双击运行即可。
 
 
-在Mac上安装Java
-====
+## 在Mac上安装Java
 
 1. 打开Java 官方下载地址
     * http://www.oracle.com/technetwork/java/javase/downloads/jre10-downloads-4417026.html
+    * 上面如果打不开，可以使用 www.java.com
 2. 下载 jre-10.0.1_osx-x64_bin.dmg
     * 需要先选中【 Accept License Agreement】
 3. 下载完成后，按提示操作。
 
 
-在Linux上安装Java
-====
+## 在Linux上安装Java
 
 Linux用户对用使用yum、apt之类安装软件。
 

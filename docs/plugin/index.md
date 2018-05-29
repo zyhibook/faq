@@ -37,6 +37,9 @@ Akaxin的扩展有两种模式：
 
 [PHP接口大全](https://github.com/akaxincom/akaxin-plugin-sdk/tree/master/sdk-php/Akaxin/Proto/Plugin)
 
+**SDK**
+
+* PHP：[https://github.com/akaxincom/akaxin-plugin-sdk](https://github.com/akaxincom/akaxin-plugin-sdk)
 
 
 ### Javascript接口
