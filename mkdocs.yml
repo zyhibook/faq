@@ -6,9 +6,13 @@ copyright: www.akaxin.com
 use_directory_urls: false
 pages:
     - 首页: index.md
-    - 服务器部署: server.md
-    - 扩展开发: plugin.md
-#    - 用户指南: user.md
+    - 服务器部署:
+        - 详细教程: install/index.md
+        - step-1-java.md : install/step-1-java.md
+        - step-2-jar.md : install/step-2-jar.md
+        - step-3-run.md : install/step-3-run.md
+        - faq-run-as-daemon.md : install/faq-run-as-daemon.md
+    - 扩展开发: plugin/index.md
     - 常见问题: faq.md
     - 招聘求贤: hire_document.md
     - 名词解释:
@@ -16,6 +20,7 @@ pages:
         - 用户使用协议: spec/user_agreement.md
         - 扫码授权登录原理: spec/init_userid_by_qrcode.md
         - 管理平台配置说明: spec/server_config.md
+
 theme:
   name: 'material'
   custom_dir: theme/
